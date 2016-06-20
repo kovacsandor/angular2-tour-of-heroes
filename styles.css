@@ -141,82 +141,77 @@ nav a.router-link-active {
   font-family: Arial, Helvetica, sans-serif; 
 }
 
-.selected {
-      background-color: #CFD8DC !important;
-      color: white;
-    }
-    .heroes {
-      margin: 0 0 2em 0;
-      list-style-type: none;
-      padding: 0;
-      width: 15em;
-    }
-    .heroes li {
-      cursor: pointer;
-      position: relative;
-      left: 0;
-      background-color: #EEE;
-      margin: .5em;
-      padding: .3em 0;
-      height: 1.6em;
-      border-radius: 4px;
-    }
-    .heroes li.selected:hover {
-      background-color: #BBD8DC !important;
-      color: white;
-    }
-    .heroes li:hover {
-      color: #607D8B;
-      background-color: #DDD;
-      left: .1em;
-    }
-    .heroes .text {
-      position: relative;
-      top: -3px;
-    }
-    .heroes .badge {
-      display: inline-block;
-      font-size: small;
-      color: white;
-      padding: 0.8em 0.7em 0 0.7em;
-      background-color: #607D8B;
-      line-height: 1em;
-      position: relative;
-      left: -1px;
-      top: -4px;
-      height: 1.8em;
-      margin-right: .8em;
-      border-radius: 4px 0 0 4px;
-    }
-    h1 {
-  font-size: 1.2em;
-  color: #999;
-  margin-bottom: 0;
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/.selected {
+  background-color: #CFD8DC !important;
+  color: white;
 }
-h2 {
-  font-size: 2em;
-  margin-top: 0;
-  padding-top: 0;
+.heroes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
 }
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #eee;
+.heroes li {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
   border-radius: 4px;
 }
-nav a:visited, a:link {
+.heroes li:hover {
   color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
 }
-nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
+.heroes li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
 }
-nav a.router-link-active {
-  color: #039be5;
+.heroes .text {
+  position: relative;
+  top: -3px;
 }
-label {
+.heroes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+button {
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/label {
   display: inline-block;
   width: 3em;
   margin: .5em 0;
@@ -245,13 +240,19 @@ button:disabled {
   color: #ccc; 
   cursor: auto;
 }
-[class*='col-'] {
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/[class*='col-'] {
   float: left;
 }
 *, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 h3 {
   text-align: center; margin-bottom: 0;
@@ -270,13 +271,13 @@ h3 {
   width: 25%;
 }
 .module {
-    padding: 20px;
-    text-align: center;
-    color: #eee;
-    max-height: 120px;
-    min-width: 120px;
-    background-color: #607D8B;
-    border-radius: 2px;
+	padding: 20px;
+	text-align: center;
+	color: #eee;
+	max-height: 120px;
+	min-width: 120px;
+	background-color: #607D8B;
+	border-radius: 2px;
 }
 h4 {
   position: relative;
@@ -293,19 +294,25 @@ h4 {
   padding-right: 20px;
 }
 @media (max-width: 600px) {
-    .module {
-      font-size: 10px;
-      max-height: 75px; }
+	.module {
+	  font-size: 10px;
+	  max-height: 75px; }
 }
 @media (max-width: 1024px) {
-    .grid {
-      margin: 0;
-    }
-    .module {
-      min-width: 60px;
-    }
+	.grid {
+	  margin: 0;
+	}
+	.module {
+	  min-width: 60px;
+	}
 }
-h1 {
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/h1 {
   font-size: 1.2em;
   color: #999;
   margin-bottom: 0;
@@ -333,3 +340,10 @@ nav a:hover {
 nav a.router-link-active {
   color: #039be5;
 }
+
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
